@@ -1,0 +1,35 @@
+.my-tools {
+    font-family: Arial, sans-serif;
+    max-width: auto;
+    margin: auto;
+  }
+  
+  .category {
+    margin-bottom: 20px;
+  }
+  
+  .category h2 {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    
+  }
+  
+  .tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .tool {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    color: grey;
+  }
+  

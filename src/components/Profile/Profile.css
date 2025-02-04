@@ -1,0 +1,109 @@
+.profile_container {
+    margin-top: var(--default-margin);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile_details { 
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@keyframes floating {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+.avatar_container {
+    margin-top: var(--default-margin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: floating 5s ease-in-out infinite; 
+  }
+  
+  .avatar_border {
+    width: 10rem; 
+    height: 10rem;
+    border-radius: 50%;
+    padding: 5px;
+    background: conic-gradient(
+      #4285F4 0deg 90deg,    
+      #EA4335 90deg 180deg,  
+      #FBBC05 180deg 270deg, 
+      #34A853 270deg 360deg  
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg); 
+  }
+  
+  .avatar_border img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white; 
+    transform: rotate(-45deg); 
+    border-width: 0.5rem;
+    border-color: white;
+    border-style: solid;
+  }
+
+  .avatar_border img:hover {
+    filter: grayscale(50%);
+    width: 8.7rem; 
+    height: 8.7rem;
+    border-radius: 50%;
+    transition: filter 0.5s ease-in-out; 
+  }
+  
+  .profile_details .name { 
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        font-size: 1.5rem;
+  }
+
+  .profile_details .title { 
+    color: grey;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.profile_details .contact_info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  line-height: 2rem;
+  color: grey;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.contact_info a { 
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 0.5rem;
+  
+}
+
+.contact_info a:hover { 
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 0.5rem;
+  
+}
+
+
+

@@ -1,17 +1,17 @@
 const resumeData = {
   currentStatus: "Open To Work - FE / BE / QA / CAD",
-  roles: "Junior Full Stack Developer - Senior Scripter - Senior CAD Engineer",
+  roles: "# ready to connect and join awesome projects",
   tasks: [
     "FE : Develop web components, websites, and platforms.",
     "BE, QA : Develop software applications and quality assurance tests.",
-    "CAD : Develop 2D drawings and 3D components and assemblies."
+    "CAD : Develop 2D drawings, 3D components and mechanical assemblies."
   ],
   tools: ["React (JavaScript)", "Java", "C#"],
   experiences: [
     {
       yearRange: "2024 - 2025",
       company: "ZUMMIT",
-      position: "Junior Web Developer",
+      position: "Junior Full Stack Developer",
       duration: "1 year | WEB - ECOMMERCE PLATFORMS",
       responsibilities: [
         "Develop web components for a comprehensive social e-commerce platform.",

@@ -21,7 +21,7 @@
   }
   
 .avatar_container {
-    margin-top: var(--default-margin);
+    margin-top: calc(var(--default-margin) + 2rem);
     display: flex;
     justify-content: center;
     align-items: center;

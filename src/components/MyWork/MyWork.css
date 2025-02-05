@@ -19,14 +19,28 @@
   
   .task-list { 
     padding-left: 20px;
+    line-height: 2rem;
   }
 
   .task-list, ul {
-    list-style-type: disc;
-    padding-left: 30px;
+    list-style-type: none;
+    padding-left: 5px;
+    line-height: 2rem;
+
     
   }
 
+  .task-icon {
+    color: purple;
+    margin-right: 8px;
+  }
+  
+  .responsibility-icon {
+    color: rgba(128, 0, 128, 0.155);
+    margin-right: 8px;
+  }
+
+  
 .task-list li::marker,
 .experience ul li::marker {
     color: purple; 

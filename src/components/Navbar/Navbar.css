@@ -14,11 +14,10 @@
 
 .navbar_list { 
    display: flex;
+   width: 100%;
+   justify-content: space-evenly;
    list-style: none;
-   gap: 5rem;
    padding: 10px;
- 
-  
 }
 
 .navbar_list a { 

@@ -1,8 +1,10 @@
 import React from 'react'
+import MyChat from '../../components/MyChat/MyChat'
+
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <MyChat></MyChat>
   )
 }
 

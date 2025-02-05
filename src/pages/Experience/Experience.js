@@ -1,7 +1,7 @@
 import React from "react"
 import MyWork from "../../components/MyWork/MyWork"
 
-const Work = () => { 
+const Experience = () => { 
     return ( 
         <div>
            <MyWork></MyWork>        
@@ -9,4 +9,4 @@ const Work = () => {
     )
 }
 
-export default Work
+export default Experience

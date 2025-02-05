@@ -6,7 +6,7 @@ const Navbar = () => {
     return ( 
         <div className="navbar_container box_style"> 
             <ul className="navbar_list">
-                <li><NavLink to="/work" className={({ isActive }) => isActive ? "active" : ""}>Experience</NavLink></li>
+                <li><NavLink to="/experience" className={({ isActive }) => isActive ? "active" : ""}>Experience</NavLink></li>
                 <li><NavLink to="/projects" className={({ isActive }) => isActive ? "active" : ""}>Projects</NavLink></li>
                 <li><NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink></li>
             </ul>

@@ -43,33 +43,57 @@ const ImageSlider = ({ images }) => {
 
   return (
     <div className="slider-container">
-      <button className="slider-button left" onClick={prevSlide}>&lt;</button>
       <div className="slider-content">
-        <img src={currentImage.url} alt={currentImage.description} className="slider-image" />
+        <img
+          src={currentImage.url}
+          alt={currentImage.description}
+          className="slider-image"
+        />
         <p className="slider-description">{currentImage.description}</p>
       </div>
-      <button className="slider-button right" onClick={nextSlide}>&gt;</button>
-      <div className="slider-bullets">
-        {images.map((_, index) => (
-          <span
-            key={index}
-            className={`bullet ${index === currentIndex ? "active" : ""}`}
-            onClick={() => setCurrentIndex(index)}
-          ></span>
-        ))}
-      </div>
-      <div className="slider-buttons">
-          {currentImage.codeLink && (
-            <a href={currentImage.codeLink} target="_blank" rel="noopener noreferrer" className="slider-btn">
-              Download Code
-            </a>
-          )}
-          {currentImage.liveLink && (
-            <a href={currentImage.liveLink} target="_blank" rel="noopener noreferrer" className="slider-btn">
-              Go to Live Project
-            </a>
-          )}
+      
+      <div className="slider-navigation">
+        <button className="slider-button" onClick={prevSlide}>
+          <i className="fa-solid fa-circle-arrow-left"></i>
+        </button>
+        
+        <div className="slider-bullets-container">
+          {images.map((_, index) => (
+            <span
+              key={index}
+              className={`bullet ${index === currentIndex ? "active" : ""}`}
+              onClick={() => setCurrentIndex(index)}
+            ></span>
+          ))}
         </div>
+        
+        <button className="slider-button" onClick={nextSlide}>
+          <i className="fa-solid fa-circle-arrow-right"></i>
+        </button>
+      </div>
+
+      <div className="slider-buttons">
+        {currentImage.codeLink && (
+          <a
+            href={currentImage.codeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="slider-btn"
+          >
+            Code
+          </a>
+        )}
+        {currentImage.liveLink && (
+          <a
+            href={currentImage.liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="slider-btn"
+          >
+            Open Live
+          </a>
+        )}
+      </div>
     </div>
   );
 };

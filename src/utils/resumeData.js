@@ -1,5 +1,5 @@
 const resumeData = {
-  currentStatus: "Open To Work - FE / BE / QA / CAD",
+  currentStatus: "Open To Work",
   roles: "# ready to connect and join awesome projects",
   tasks: [
     "FE : Develop web components, websites, and platforms.",
@@ -83,7 +83,7 @@ const resumeData = {
         "Provide technical support, manage tickets, and prioritize them based on severity."
       ],
       tools: [
-        "C Typeless",
+        "C",
         "Pawn",
         "VS Code",
         "Tickets",

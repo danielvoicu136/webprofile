@@ -70,7 +70,7 @@ export default function ChatApp() {
           onChange={(e) => setMessage(e.target.value)}
           className="chat-message-box"
         ></textarea>
-        <button onClick={sendMessage} className="chat-send">Send</button>
+        <button onClick={sendMessage} className="chat-send">Post</button>
       </div>
     </div>
   );

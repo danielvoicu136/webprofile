@@ -27,7 +27,7 @@ jobs:
           local-dir: "./build/"
           server-dir: "/daniel.daeva.ro/webprofile/"
 
-      - name: Deploy backend folder to FTP
+      - name: Deploy backend folder (backend folder) to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}

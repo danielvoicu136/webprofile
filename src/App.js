@@ -4,9 +4,10 @@ import Profile from './components/Profile/Profile';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./pages/Projects/Projects";
-import Contact from "./pages/Contact/Contact";
+import Questions from "./pages/Questions/Questions";
 import Navbar from './components/Navbar/Navbar';
 import Experience from './pages/Experience/Experience';
+import BackToTop from './components/BackToTop/BackToTop';
 
 function App() {
   return (
@@ -21,12 +22,13 @@ function App() {
                     <Route path="*" element={<Experience />} />
                     <Route path="/experience" element={<Experience />} />
                     <Route path="/projects" element={<Projects />} />
-                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/questions" element={<Questions />} />
                   </Routes>
             </Router>
         </div>
         
       </div>
+      <BackToTop></BackToTop>
     </div>
   );
 }

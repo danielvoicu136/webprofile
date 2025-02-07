@@ -20,10 +20,10 @@ const Navbar = () => {
         <div className="navbar_container box_style"> 
             <ul className="navbar_list">
                 <li> <NavLink to="/experience" className={({ isActive }) => isActive ? "active" : ""}>
-                         {isMobile ? "CV" : "Experience"}
+                         {isMobile ? "EXP" : "Experience"}
                     </NavLink></li>
                 <li><NavLink to="/projects" className={({ isActive }) => isActive ? "active" : ""}>Projects</NavLink></li>
-                <li><NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink></li>
+                <li><NavLink to="/questions" className={({ isActive }) => isActive ? "active" : ""}>Questions</NavLink></li>
             </ul>
         </div>
     );

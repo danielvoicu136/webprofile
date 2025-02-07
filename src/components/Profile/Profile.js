@@ -2,6 +2,7 @@ import React from "react";
 import "./Profile.css";
 import profileData from "../../utils/profileData";
 import MyTools from "../MyTools/MyTools";
+import WelcomeBox from "../WelcomeBox/WelcomeBox";
 
 const Profile = () => {
   return (
@@ -33,7 +34,7 @@ const Profile = () => {
           </p>
         </div>
       </div>
-
+      <WelcomeBox></WelcomeBox>
       <MyTools />
     </div>
   );

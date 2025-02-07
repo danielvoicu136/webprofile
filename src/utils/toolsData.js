@@ -29,10 +29,17 @@ const toolsData = [
       ]
     },
     {
-      "category": "Others",
+      "category": "Management",
       "tools": [
         { "name": "GIT", "icon": "fa-brands fa-git-alt", "color": "#F05032" },
+        { "name": "GitHub Actions", "icon": "fa-solid fa-code", "color": "#007ACC" },
         { "name": "Maven", "icon": "fa-solid fa-box", "color": "#E0234E" },
+        { "name": "Jira Tracking", "icon": "fa-solid fa-chart-gantt", "color": "#4479A1" }, 
+      ]
+    },
+    {
+      "category": "Others",
+      "tools": [
         { "name": "VS Code", "icon": "fa-solid fa-code", "color": "#007ACC" },
         { "name": "IntelliJ", "icon": "fa-solid fa-code", "color": "#6D4C41" },
         { "name": "CATIA / ENOVIA", "icon": "fa-solid fa-cogs", "color": "#8BBF61" }

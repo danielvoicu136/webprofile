@@ -12,7 +12,7 @@ const projectData = {
         },
         { 
           url: require("../assets/images/cvresume.jpg"),
-          description: "Resume Website : Present Yourself and Your Work",
+          description: "Resume Website : Present Yourself and Your Work ( React, PHP, MySQL, Github Actions )",
           codeLink: "https://github.com/danielvoicu136/webprofile",
           liveLink: "https://daniel.daeva.ro/webprofile/"
         }
@@ -59,24 +59,21 @@ const projectData = {
       description: "Projects related to gaming industry.",
       images: [
         { 
-          url: require("../assets/images/heroes.jpg"),
-          description: "Heroes : Valorant Like Gameplay for Cstrike",
-          codeLink: "https://github.com/danielvoicu136/gameplay_cstrike_war3re",
+          url: require("../assets/images/valve.jpg"),
+          description: "Creating Tools and Gameplay for CStrike ( Pawn , Typeless C )",
+          codeLink: "https://github.com/danielvoicu136/cstrike_plugins_pack",
         },
         { 
           url: require("../assets/images/souls.jpg"),
-          description: "Floating Souls : Cooperative Team Revive for CStrike",
+          description: "Team Revive for CStrike ( Pawn , Typeless C )",
           codeLink: "https://github.com/danielvoicu136/cstrike_plugins_pack/tree/main/cstrike_gameplay_revive_soul",
         },
         { 
-          url: require("../assets/images/soon.jpg"),
-          description: "Inventory : Buy magic items for CStrike",
-          codeLink: "",
-        }
-
-
-        
-  
+          url: require("../assets/images/heroes.jpg"),
+          description: "Valorant Style Heroes for CStrike ( Pawn , Typeless C , MySQL )",
+          codeLink: "https://github.com/danielvoicu136/gameplay_cstrike_war3re",
+        },
+     
       ]
     }
   ],
@@ -87,32 +84,32 @@ const projectData = {
       images: [
         { 
           url: require("../assets/images/catia.jpg"),
-          description: "Automotive Design and Structure"
+          description: "Worked on Automotive Design and Structure"
       
         },
         { 
           url: require("../assets/images/clio.jpg"), 
-          description: "Clio : Rear Face and Doors"
+          description: "Clio : Worked on Rear Face and Doors"
           
         },
         { 
           url: require("../assets/images/logan.jpg"), 
-          description: "Logan : Upper body and Front Face"
+          description: "Logan : Worked on Upper body and Front Face"
           
         },
         { 
           url: require("../assets/images/megane.jpg"), 
-          description: "Megane E-Tech : Under body"
+          description: "Megane E-Tech : Worked on Under body"
           
         },
         { 
           url: require("../assets/images/sandero.jpg"), 
-          description: "Sandero : Upper body and Front Face"
+          description: "Sandero : Worked on Upper body and Front Face"
           
         },
         { 
           url: require("../assets/images/renaultsuv.jpg"), 
-          description: "Renault SUV : Digital Mockup Management"
+          description: "Renault SUV : Worked on Digital Mockup Management"
         },
         
       ]
@@ -123,16 +120,16 @@ const projectData = {
       images: [
         { 
           url: require("../assets/images/biw.jpg"), 
-          description: "Vehicle Body and Quality Assurance"
+          description: "Worked on Vehicle Body and Quality Assurance"
         },
         { 
           url: require("../assets/images/lada.jpg"), 
-          description: "LADA VESTA : Upper Body, Doors and Rear Face"
+          description: "LADA VESTA : Worked on Upper Body, Doors and Rear Face"
          
         },
         { 
           url: require("../assets/images/vestacross.jpg"), 
-          description: "VESTA CROSS : Upper Body, Doors and Rear Face"
+          description: "VESTA CROSS : Worked on Upper Body, Doors and Rear Face"
         },
         { 
           url: require("../assets/images/opel.jpg"), 

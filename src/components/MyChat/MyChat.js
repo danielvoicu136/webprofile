@@ -15,29 +15,52 @@ export default function ChatApp() {
 
   useEffect(() => {
     fetchMessages();
-
-    
     const interval = setInterval(() => {
       fetchMessages();
-    }, 5000); 
-
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
+
+  const translateMessage = async (text) => {
+    try {
+      const response = await fetch("https://api.openai.com/v1/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer YOUR_OPENAI_API_KEY`,
+        },
+        body: JSON.stringify({
+          model: "gpt-4",
+          messages: [
+            {
+              role: "system",
+              content: `Translate this message to English: "${text}"`,
+            },
+          ],
+        }),
+      });
+      const data = await response.json();
+      return data.choices[0]?.message?.content || text;
+    } catch (error) {
+      console.error("Translation error:", error);
+      return text;
+    }
+  };
 
   const sendMessage = async () => {
     if (!name || !message) return;
 
+    const translatedMessage = await translateMessage(message);
     try {
       const response = await fetch("https://daniel.daeva.ro/webprofile/backend/backend.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, message }),
+        body: JSON.stringify({ name, message, translated: translatedMessage }),
       });
 
       if (response.ok) {
-       
-        fetchMessages(); 
-        setMessage(""); 
+        fetchMessages();
+        setMessage("");
       } else {
         console.error("Error sending message");
       }
@@ -49,13 +72,21 @@ export default function ChatApp() {
   return (
     <div className="chat-container">
       <div className="chat-history">
-        {messages.map((msg, index) => (
-          <div key={index} className="chat-message">
-            <strong>{msg.name}</strong>: {msg.message} 
-            <span className="chat-timestamp">({new Date(msg.date).toLocaleString()})</span>
-          </div>
-        ))}
-      </div>
+          {messages.map((msg, index) => (
+            <div key={index} className="chat-message">
+              <div className="chat-message-header">
+                <span className="chat-name">{msg.name}</span>
+                <span className="chat-timestamp">{new Date(msg.date).toLocaleString()}</span>
+              </div>
+              <hr className="chat-separator" />
+              <div className="chat-text">Text Original: {msg.message}</div>
+              <hr className="chat-separator" />
+              <div className="chat-translation">Text Tradus: {msg.translated}</div>
+            </div>
+          ))}
+        </div>
+
+
       <div className="chat-input">
         <input
           type="text"
@@ -70,7 +101,9 @@ export default function ChatApp() {
           onChange={(e) => setMessage(e.target.value)}
           className="chat-message-box"
         ></textarea>
-        <button onClick={sendMessage} className="chat-send">Post</button>
+        <button onClick={sendMessage} className="chat-send">
+          Post
+        </button>
       </div>
     </div>
   );

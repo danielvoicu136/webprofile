@@ -70,7 +70,7 @@ const projectData = {
         },
         { 
           url: require("../assets/images/heroes.jpg"),
-          description: "Valorant Style Heroes for CStrike ( Pawn , Typeless C , MySQL )",
+          description: "Heroes for CStrike ( Pawn , Typeless C , MySQL )",
           codeLink: "https://github.com/danielvoicu136/gameplay_cstrike_war3re",
         },
      

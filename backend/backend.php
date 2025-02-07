@@ -28,16 +28,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents("php://input"), true);
 
-    if (!isset($data['name']) || !isset($data['message'])) {
+    if (!isset($data['name']) || !isset($data['message']) || !isset($data['translated'])) {
         echo json_encode(["error" => "Invalid input"]);
         exit;
     }
 
     $name = $conn->real_escape_string($data['name']);
     $message = $conn->real_escape_string($data['message']);
+    $translated = $conn->real_escape_string($data['translated']);
     $date = date('Y-m-d H:i:s');
 
-    $sql = "INSERT INTO messages (name, message, date) VALUES ('$name', '$message', '$date')";
+    $sql = "INSERT INTO messages (name, message, translated, date) VALUES ('$name', '$message', '$translated', '$date')";
     if ($conn->query($sql) === TRUE) {
         echo json_encode(["success" => "Message sent successfully"]);
     } else {

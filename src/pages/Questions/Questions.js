@@ -1,10 +1,10 @@
 import React from 'react'
-import MyChat from '../../components/MyChat/MyChat'
+import FeedbackBox from '../../components/FeedbackBox/FeedbackBox'
 
 
 function Questions() {
   return (
-    <MyChat></MyChat>
+    <FeedbackBox></FeedbackBox>
   )
 }
 

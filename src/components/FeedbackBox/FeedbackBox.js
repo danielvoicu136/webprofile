@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
-import "./MyChat.css";
+import "./FeedbackBox.css";
 
-export default function ChatApp() {
+export default function FeedbackBox() {
   const [messages, setMessages] = useState([]);
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    const element = document.querySelector('.refresh');
+    if (element) {
+        element.scrollTop = element.scrollHeight;
+    }
+}, [messages]);
 
   const fetchMessages = () => {
     fetch("https://daniel.daeva.ro/webprofile/backend/backend.php")
@@ -27,7 +34,7 @@ export default function ChatApp() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer YOUR_OPENAI_API_KEY`,
+          Authorization: `OPEN_AI_TOKEN_KEY`,
         },
         body: JSON.stringify({
           model: "gpt-4",
@@ -70,8 +77,11 @@ export default function ChatApp() {
   };
 
   return (
-    <div className="chat-container">
-      <div className="chat-history">
+    <div className="chat-container box_style">
+      <div className="chat-header">
+        <p>Questions and Feedback ( AI OFF )</p>
+      </div>
+      <div className="chat-history refresh">
           {messages.map((msg, index) => (
             <div key={index} className="chat-message">
               <div className="chat-message-header">
@@ -79,9 +89,9 @@ export default function ChatApp() {
                 <span className="chat-timestamp">{new Date(msg.date).toLocaleString()}</span>
               </div>
               <hr className="chat-separator" />
-              <div className="chat-text">Text Original: {msg.message}</div>
+              <div className="chat-text">Message : {msg.message}</div>
               <hr className="chat-separator" />
-              <div className="chat-translation">Text Tradus: {msg.translated}</div>
+              <div className="chat-translation">AI Translate : {msg.translated}</div>
             </div>
           ))}
         </div>
@@ -96,13 +106,13 @@ export default function ChatApp() {
           className="chat-name"
         />
         <textarea
-          placeholder="Your message"
+          placeholder="Your message, question, feedback etc."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           className="chat-message-box"
         ></textarea>
         <button onClick={sendMessage} className="chat-send">
-          Post
+          Submit Feedback
         </button>
       </div>
     </div>

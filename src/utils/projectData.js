@@ -12,7 +12,7 @@ const projectData = {
         },
         { 
           url: require("../assets/images/cvresume.jpg"),
-          description: "Resume Website : Present Yourself and Your Work ( React, PHP, MySQL, Github Actions )",
+          description: "Resume Website : Present Yourself and Your Work ( React, PHP, MySQL, Github Actions, Open AI API )",
           codeLink: "https://github.com/danielvoicu136/webprofile",
           liveLink: "https://daniel.daeva.ro/webprofile/"
         }
@@ -65,12 +65,25 @@ const projectData = {
         },
         { 
           url: require("../assets/images/souls.jpg"),
-          description: "Team Revive for CStrike ( Pawn , Typeless C )",
+          description: "Cooperative Team Revive for CStrike ( Pawn , Typeless C )",
           codeLink: "https://github.com/danielvoicu136/cstrike_plugins_pack/tree/main/cstrike_gameplay_revive_soul",
         },
+   
+        { 
+          url: require("../assets/images/replace.jpg"),
+          description: "Advanced Bot Replacer for CStrike with AFK detection, map spawn fixes, objective transfer, etc. ( Pawn , Typeless C )",
+          codeLink: "https://github.com/danielvoicu136/yapb_bot_controller",
+        },
+
+        { 
+          url: require("../assets/images/items.jpg"),
+          description: "Inventory RPG for CStrike with Easy Configuration, Dynamic Slots, Powers etc. ( Pawn , Typeless C )",
+          codeLink: "https://github.com/danielvoicu136/cstrike_plugins_pack/tree/main/cstrike_rpg_items",
+        },
+
         { 
           url: require("../assets/images/heroes.jpg"),
-          description: "Heroes for CStrike ( Pawn , Typeless C , MySQL )",
+          description: "Valorant style gameplay for CStrike with Heroes, XP, Levels, Items, Skills, Ultimates etc ( Pawn , Typeless C , MySQL )",
           codeLink: "https://github.com/danielvoicu136/gameplay_cstrike_war3re",
         },
      

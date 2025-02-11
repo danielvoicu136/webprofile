@@ -16,7 +16,7 @@ const toolsData = [
         { "name": "Java", "icon": "fa-brands fa-java", "color": "#b07219" },
         { "name": "Node.js", "icon": "fa-brands fa-node-js", "color": "#6DB33F" },
         { "name": "MySQL", "icon": "fa-solid fa-database", "color": "#4479A1" },
-        { "name": "Spring", "icon": "fa-solid fa-leaf", "color": "#6DB33F" },
+        { "name": "SpringBoot", "icon": "fa-solid fa-leaf", "color": "#6DB33F" },
         { "name": "C & C#", "icon": "fa-solid fa-laptop-code", "color": "#1572B6" }
       ]
     },

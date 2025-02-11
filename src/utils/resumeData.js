@@ -1,5 +1,5 @@
 const resumeData = {
-  currentStatus: "Open To Work",
+  currentStatus: "Open to Work",
   roles: "# ready to connect and join awesome projects",
   tasks: [
     "FE : Develop web components, websites, and platforms.",

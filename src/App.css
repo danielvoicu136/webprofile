@@ -33,17 +33,26 @@ body {
   
   }
 
-.grid_container { 
+  .grid_container { 
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 450px auto; /* Fixează `item1` la 300px, restul pentru `item2` */
     grid-gap: 0;
 }
 
 @media (max-width:900px) { 
     .grid_container { 
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Pe ecrane mici, trece la o singură coloană */
+    }
+
+    .item1 {
+        width: 100%;
+    }
+
+    .item2 {
+        width: 100%;
     }
 }
+
 
 h1 {
     font-family: 'Montserrat', sans-serif;

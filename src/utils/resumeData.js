@@ -73,7 +73,7 @@ const resumeData = {
       position: "Technical Support and Scripting Leader",
       duration: "5 years | GAMING - LINUX GAME SERVERS",
       responsibilities: [
-        "Develop gameplay and utility plugins for Linux game servers.",
+        "Develop gameplay and utility tools for Linux game servers using typeless C scripting.",
         "Enhance servers stability, performance, and gameplay capabilities.",
         "Update and maintain code by fixing bugs, resolving conflicts, and extending features.",
         "Test and debug code, check console output, and log errors.",
@@ -83,7 +83,7 @@ const resumeData = {
         "Provide technical support, manage tickets, and prioritize them based on severity."
       ],
       tools: [
-        "C",
+        "Typeless C",
         "Pawn",
         "VS Code",
         "Tickets",

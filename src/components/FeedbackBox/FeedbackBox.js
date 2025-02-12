@@ -79,7 +79,7 @@ export default function FeedbackBox() {
   return (
     <div className="chat-container box_style">
       <div className="chat-header">
-        <p>Feedback ( AI OFF )</p>
+        <p>Questions and Feedback ( AI OFF )</p>
       </div>
       <div className="chat-history refresh">
           {messages.map((msg, index) => (

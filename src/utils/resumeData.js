@@ -2,7 +2,7 @@ const resumeData = {
   currentStatus: "Open to Work",
   roles: "# ready to connect and join awesome projects",
   tasks: [
-    "FE : Develop web components, websites, and platforms.",
+    "FE : Develop web components, websites and platforms.",
     "BE, QA : Develop software applications and quality assurance tests.",
     "CAD : Develop 2D drawings, 3D components and mechanical assemblies."
   ],

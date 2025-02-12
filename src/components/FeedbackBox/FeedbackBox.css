@@ -1,9 +1,10 @@
 
 .chat-container {
   width: 90%;
-  max-width: 1200px; 
+  max-width: 1200px;
   padding: 20px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 

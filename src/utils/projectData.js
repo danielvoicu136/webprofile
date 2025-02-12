@@ -60,7 +60,7 @@ const projectData = {
       images: [
         { 
           url: require("../assets/images/valve.jpg"),
-          description: "Creating Tools and Gameplay for CStrike ( Pawn , Typeless C )",
+          description: "Creating Tools and Gameplay for CStrike ( Pawn , Typeless C , MySQL )",
           codeLink: "https://github.com/danielvoicu136/cstrike_plugins_pack",
         },
         { 

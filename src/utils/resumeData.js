@@ -83,7 +83,7 @@ const resumeData = {
         "Provide technical support, manage tickets, and prioritize them based on severity."
       ],
       tools: [
-        "Typeless C",
+        "C Typeless",
         "Pawn",
         "VS Code",
         "Tickets",

@@ -79,7 +79,7 @@ export default function FeedbackBox() {
   return (
     <div className="chat-container box_style">
       <div className="chat-header">
-        <p>Questions and Feedback ( AI OFF )</p>
+        <p>Questions and Feedback <span className="chat-status">AI OFF</span></p>
       </div>
       <div className="chat-history refresh">
           {messages.map((msg, index) => (
@@ -106,7 +106,7 @@ export default function FeedbackBox() {
           className="chat-name"
         />
         <textarea
-          placeholder="Your message, question, feedback etc."
+          placeholder="Your message, question, feedback, idea etc."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           className="chat-message-box"

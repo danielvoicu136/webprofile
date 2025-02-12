@@ -3,8 +3,6 @@
     width: 95%;
     margin: auto;
     border-radius: 10px;
-    background-color: #f8f9fa;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -18,11 +16,26 @@
     font-weight: bold;
     border-radius: 8px;
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
   }
   
+  .chat-status { 
+    background-color: rgb(129, 0, 169);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 20px;
+    color: white;
+  }
+
   .chat-name { 
     max-width: 200px;
     overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .chat-timestamp { 
+    color: grey;
+    font-weight: lighter;
   }
  
   .chat-history {
@@ -31,12 +44,12 @@
     padding: 10px;
     background-color: #ffffff;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
   
 
   .chat-message {
-    background-color: #e9ecef;
+    background-color: whitesmoke;
     padding: 8px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -58,12 +71,20 @@
   
   .chat-text, .chat-translation {
     font-size: 0.9rem;
+ 
   }
+
+  .chat-translation { 
+    font-style: italic;
+    color: purple;
+  }
+
   
   .chat-input {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
   }
   
   .chat-input input, .chat-input textarea {
@@ -72,6 +93,7 @@
     border: 1px solid #ced4da;
     border-radius: 5px;
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
   }
   
   .chat-input textarea {
@@ -95,3 +117,7 @@
     background-color: grey;
   }
   
+  .chat-input input:focus, .chat-input textarea:focus {
+    border: 1px dashed purple;
+    outline: none;
+  }

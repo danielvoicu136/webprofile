@@ -14,7 +14,7 @@ export default function FeedbackBox() {
 }, [messages]);
 
   const fetchMessages = () => {
-    fetch("https://daniel.daeva.ro/webprofile/backend/backend.php")
+    fetch("https://daniel.daeva.ro/webprofile/backend/backend.php?action=getMessages")
       .then((res) => res.json())
       .then((data) => setMessages(data))
       .catch((err) => console.error("Error fetching messages:", err));
@@ -22,47 +22,18 @@ export default function FeedbackBox() {
 
   useEffect(() => {
     fetchMessages();
-    const interval = setInterval(() => {
-      fetchMessages();
-    }, 5000);
+    const interval = setInterval(fetchMessages, 5000);
     return () => clearInterval(interval);
   }, []);
 
-  const translateMessage = async (text) => {
-    try {
-      const response = await fetch("https://api.openai.com/v1/completions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `OPEN_AI_TOKEN_KEY`,
-        },
-        body: JSON.stringify({
-          model: "gpt-4",
-          messages: [
-            {
-              role: "system",
-              content: `Translate this message to English: "${text}"`,
-            },
-          ],
-        }),
-      });
-      const data = await response.json();
-      return data.choices[0]?.message?.content || text;
-    } catch (error) {
-      console.error("Translation error:", error);
-      return text;
-    }
-  };
-
   const sendMessage = async () => {
-    if (!name || !message) return;
+    if (!name.trim() || !message.trim()) return;
 
-    const translatedMessage = await translateMessage(message);
     try {
-      const response = await fetch("https://daniel.daeva.ro/webprofile/backend/backend.php", {
+      const response = await fetch("https://daniel.daeva.ro/webprofile/backend/backend.php?action=addMessage", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, message, translated: translatedMessage }),
+        body: JSON.stringify({ name, message, translated: "N/A" }),
       });
 
       if (response.ok) {
@@ -79,23 +50,26 @@ export default function FeedbackBox() {
   return (
     <div className="chat-container box_style">
       <div className="chat-header">
-        <p>Want to add Feedback ?<span className="chat-status">AI OFF</span></p>
+        <p>Want to add Feedback? <span className="chat-status">AI OFF</span></p>
       </div>
       <div className="chat-history refresh">
-          {messages.map((msg, index) => (
+        {messages.length > 0 ? (
+          messages.map((msg, index) => (
             <div key={index} className="chat-message">
               <div className="chat-message-header">
                 <span className="chat-name">{msg.name}</span>
                 <span className="chat-timestamp">{new Date(msg.date).toLocaleString()}</span>
               </div>
               <hr className="chat-separator" />
-              <div className="chat-text">Message : {msg.message}</div>
+              <div className="chat-text">Message: {msg.message}</div>
               <hr className="chat-separator" />
-              <div className="chat-translation">AI Translate : {msg.translated}</div>
+              <div className="chat-translation">AI Translate: {msg.translated}</div>
             </div>
-          ))}
-        </div>
-
+          ))
+        ) : (
+          <p className="no-messages">No messages yet. Be the first to leave feedback!</p>
+        )}
+      </div>
 
       <div className="chat-input">
         <input

@@ -3,6 +3,7 @@ import "./Profile.css";
 import profileData from "../../utils/profileData";
 import MyTools from "../MyTools/MyTools";
 import WelcomeBox from "../WelcomeBox/WelcomeBox";
+import VisitCounter from "../VisitCounter/VisitCounter";
 
 const Profile = () => {
   return (
@@ -35,6 +36,7 @@ const Profile = () => {
         </div>
       </div>
       <WelcomeBox></WelcomeBox>
+      <VisitCounter></VisitCounter>
       <MyTools />
     </div>
   );

@@ -6,7 +6,7 @@ const welcomeData = [
     "",
     "Also, I appreciate all the feedback and ideas",
     "",
-    "Thank you for visite !",
+    "Thank you for visit !",
   ];
   
   export default welcomeData;

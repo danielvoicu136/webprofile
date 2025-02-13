@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./VisitCounter.css";
 
 const VisitCounter = () => {
     const [visits, setVisits] = useState(0);
@@ -16,7 +17,7 @@ const VisitCounter = () => {
 
     return (
         <div className="visit-counter">
-            <h2>Vizite totale:</h2>
+            <h2>Total visits:</h2>
             <p>{visits}</p>
         </div>
     );

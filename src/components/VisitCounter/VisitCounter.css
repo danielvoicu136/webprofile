@@ -1,26 +1,29 @@
 .visit-counter {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    border: 2px solid #3498db;
+    padding: 5px;
+    border: solid 2px rgba(128,0,128,0.2);
+    border-style: dashed;
     border-radius: 10px;
     background-color: #f9f9f9;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     width: 250px;
-    margin: 20px auto;
+    margin: 5px auto;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .visit-counter h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    color: grey;
+    font-weight: normal;
 }
 
 .visit-counter p {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
-    color: #3498db;
+    color: purple;
+    margin-left: 20px;
 }

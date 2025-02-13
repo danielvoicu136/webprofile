@@ -19,10 +19,10 @@ const Navbar = () => {
     return ( 
         <div className="navbar_container box_style"> 
             <ul className="navbar_list">
+                <li><NavLink to="/projects" className={({ isActive }) => isActive ? "active" : ""}>Projects</NavLink></li>
                 <li> <NavLink to="/experience" className={({ isActive }) => isActive ? "active" : ""}>
                          {isMobile ? "EXP" : "Experience"}
                     </NavLink></li>
-                <li><NavLink to="/projects" className={({ isActive }) => isActive ? "active" : ""}>Projects</NavLink></li>
                 <li><NavLink to="/questions" className={({ isActive }) => isActive ? "active" : ""}>Questions</NavLink></li>
             </ul>
         </div>

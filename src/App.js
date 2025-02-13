@@ -18,10 +18,10 @@ function App() {
             <Router basename="/webprofile">
               <Navbar></Navbar>
                   <Routes>
-                    <Route path="/" element={<Experience />} />
-                    <Route path="*" element={<Experience />} />
-                    <Route path="/experience" element={<Experience />} />
+                    <Route path="/" element={<Projects />} />
+                    <Route path="*" element={<Projects />} />
                     <Route path="/projects" element={<Projects />} />
+                    <Route path="/experience" element={<Experience />} />
                     <Route path="/questions" element={<Questions />} />
                   </Routes>
             </Router>

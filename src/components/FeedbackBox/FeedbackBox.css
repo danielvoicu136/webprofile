@@ -98,7 +98,8 @@
   
   .chat-input textarea {
     resize: none;
-    height: 40px;
+    height: 50px;
+    overflow: hidden;
   }
   
   .chat-send {

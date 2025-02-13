@@ -7,8 +7,7 @@ const projectData = {
         { 
           url: require("../assets/images/soon.jpg"),
           description: "Company Website",
-          codeLink: "#",
-          liveLink: "#"
+     
         },
         { 
           url: require("../assets/images/cvresume.jpg"),
@@ -25,14 +24,12 @@ const projectData = {
         { 
           url: require("../assets/images/soon.jpg"),
           description: "Hotel Management",
-          codeLink: "#",
-          liveLink: "#"
+         
         },
         { 
           url: require("../assets/images/soon.jpg"),
           description: "Movie SelfHosting",
-          codeLink: "#",
-          liveLink: "#"
+         
         }
       ]
     },
@@ -43,14 +40,12 @@ const projectData = {
         { 
           url: require("../assets/images/soon.jpg"),
           description: "Casino and Betting Platform",
-          codeLink: "#",
-          liveLink: "#"
+        
         },
         { 
           url: require("../assets/images/soon.jpg"),
           description: "Banking and ATM Platform",
-          codeLink: "#",
-          liveLink: "#"
+        
         }
       ]
     },

@@ -65,7 +65,7 @@ const projectData = {
         },
         { 
           url: require("../assets/images/souls.jpg"),
-          description: "Cooperative Team Revive for CStrike ( Pawn , Typeless C )",
+          description: "Animated Cooperative Team Revive for CStrike ( Pawn , Typeless C )",
           codeLink: "https://github.com/danielvoicu136/cstrike_plugins_pack/tree/main/cstrike_gameplay_revive_soul",
         },
    

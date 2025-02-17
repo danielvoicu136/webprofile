@@ -5,8 +5,10 @@ const projectData = {
       description: "Landing pages, personal pages, product websites etc.",
       images: [
         { 
-          url: require("../assets/images/soon.jpg"),
-          description: "Company Website",
+          url: require("../assets/images/productsite.jpg"),
+          description: "Product Website : Present your Product or Services ( HTML, CSS, JavaScript, React, Github Actions )",
+          codeLink: "https://github.com/danielvoicu136/product_website",
+          liveLink: "https://studio.daeva.ro/"
      
         },
         { 

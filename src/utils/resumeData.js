@@ -27,9 +27,7 @@ const resumeData = {
         "JavaScript",
         "TypeScript",
         "React",
-        "Redux",
         "Node.js",
-        "Express.js",
         "Databases",
         "Git",
         "Slack",
@@ -53,7 +51,6 @@ const resumeData = {
       tools: [
         "Agile",
         "Scrum",
-        "Waterfall",
         "Jira",
         "Confluence",
         "CATIA",

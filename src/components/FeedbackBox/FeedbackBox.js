@@ -50,7 +50,7 @@ export default function FeedbackBox() {
   return (
     <div className="chat-container box_style">
       <div className="chat-header">
-        <p>Want to add Feedback? <span className="chat-status">AI OFF</span></p>
+        <p>Want to add Feedback ? <span className="chat-status">AI OFF</span></p>
       </div>
       <div className="chat-history refresh">
         {messages.length > 0 ? (

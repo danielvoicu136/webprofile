@@ -4,17 +4,21 @@ const toolsData = [
       "tools": [
         { "name": "HTML", "icon": "fa-brands fa-html5", "color": "#ea4335" },
         { "name": "CSS", "icon": "fa-brands fa-css3-alt", "color": "#fbbc05" },
+        { "name": "Tailwind", "icon": "fa-regular fa-paper-plane", "color": "#673ab7" },
+        { "name": "JavaScript", "icon": "fa-brands fa-js-square", "color": "#34a853" },
         { "name": "TypeScript", "icon": "fa-brands fa-js-square", "color": "#4285f4" },
-        { "name": "React ± Next.js", "icon": "fa-brands fa-react", "color": "#34a853" },
-        { "name": "Vite Build", "icon": "fa-solid fa-cloud-bolt", "color": "#673ab7" },
+        { "name": "React", "icon": "fa-brands fa-react", "color": "#34a853" },
+       
+        { "name": "Vite", "icon": "fa-solid fa-cloud-bolt", "color": "#673ab7" },
       ]
     },
     {
       "category": "Back-End",
       "tools": [
-        { "name": "Java (Maven and Spring Boot)", "icon": "fa-brands fa-java", "color": "#4285f4" },
         { "name": "Node.js", "icon": "fa-brands fa-node-js", "color": "#34a853" },
-        { "name": "Databases (MySQL and MongoDB)", "icon": "fa-solid fa-database", "color": "#fbbc05" }
+        { "name": "Next.js", "icon": "fa-brands fa-react", "color": "#ea4335" },
+        { "name": "Java, Maven, Spring Boot", "icon": "fa-brands fa-java", "color": "#4285f4" },
+        { "name": "Databases SQL NoSQL", "icon": "fa-solid fa-database", "color": "#fbbc05" }
       ]   
     },
     {
@@ -26,10 +30,10 @@ const toolsData = [
       ]
     },
     {
-      "category": "Management",
+      "category": "Workflow",
       "tools": [
         { "name": "Git", "icon": "fa-brands fa-git-alt", "color": "#ea4335" },
-        { "name": "GitHub Actions Workflow", "icon": "fa-solid fa-cloud-arrow-up", "color": "#4285f4" },
+        { "name": "GitHub Actions", "icon": "fa-solid fa-cloud-arrow-up", "color": "#4285f4" },
         { "name": "Jira Tracking", "icon": "fa-solid fa-chart-gantt", "color": "#673ab7" }, 
       ]  
     },

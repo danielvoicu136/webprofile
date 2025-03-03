@@ -3,32 +3,36 @@ const resumeData = {
   roles: "# ready to connect and join awesome projects",
   tasks: [
     "FE : Develop web components, websites and platforms.",
-    "BE, QA : Develop software applications and quality assurance tests.",
+    "BE : Develop infrastructure, APIs and routing.",
+    "QA : Perform manual testing, unit and mock testing.",
     "CAD : Develop 2D drawings, 3D components and mechanical assemblies."
   ],
-  tools: ["React (JavaScript)", "Java", "C#"],
+  tools: ["React", "Java", "C#"],
   experiences: [
     {
-      yearRange: "2024 - 2025",
+      yearRange: "2023 - 2025",
       company: "ZUMMIT",
-      position: "Junior Full Stack Developer",
-      duration: "1 year | WEB - ECOMMERCE PLATFORMS",
+      position: "Full Stack Developer",
+      duration: "2 years | WEB - ECOMMERCE PLATFORMS",
       responsibilities: [
-        "Develop web components for a comprehensive social e-commerce platform.",
+        "Develop web components for web platforms and websites.",
         "Implement new features to improve user interaction and platform responsiveness.",
         "Contribute to research and design by analyzing competition and market trends.",
-        "Contribute to research on user psychology, motivation, and behavioral trends.",
+        "Contribute to research on user psychology, motivation and behavioral trends.",
         "Provide API integration to enable efficient data management and high optimization."
       ],
       tools: [
         "HTML",
         "CSS",
         "SASS",
+        "Tailwind",
         "JavaScript",
         "TypeScript",
         "React",
         "Node.js",
-        "Databases",
+        "Next.js",
+        "Databases SQL NoSQL",
+        "Prisma ORM",
         "Git",
         "Slack",
         "VS Code",
@@ -77,7 +81,8 @@ const resumeData = {
         "Engage with the community and gather feedback from players to improve gameplay.",
         "Research and design gameplay features by studying competition and market trends.",
         "Research and study player psychology, motivation, and behavioral trends.",
-        "Provide technical support, manage tickets, and prioritize them based on severity."
+        "Provide technical support, manage tickets, and prioritize them based on severity.",
+        "Always responsive to both client needs and team necessities."
       ],
       tools: [
         "C Typeless",

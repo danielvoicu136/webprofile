@@ -2,7 +2,7 @@ const profileData = {
     avatar : require("../assets/images/myavatar.jpg"),
     name : "DANIEL VOICU", 
     roles : [ 
-        "Junior Full Stack Developer",
+        "Full Stack Developer",
         "Senior Automotive CAD Engineer",
         "Senior Gameplay Scripter"
     ],

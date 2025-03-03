@@ -1,6 +1,22 @@
 const projectData = {
   "Programming": [
     {
+      name: "Web Apps",
+      description: "Full stack platforms, client, server, control panels, tools etc",
+      images: [
+        { 
+          url: require("../assets/images/soon.jpg"),
+          description: "Premium Services : Offer or request high-quality, high-paying services ( Tailwind, TypeScript, React, Next.js )",
+         
+        },
+        { 
+          url: require("../assets/images/soon.jpg"),
+          description: "Auto Safe : A Modern Auto Marketplace with Safe Cars, Hand-Picked by Us. Stop Being Scammed!",
+        }
+      ]
+    },
+
+    {
       name: "Web Pages",
       description: "Landing pages, personal pages, product websites etc.",
       images: [
@@ -19,34 +35,19 @@ const projectData = {
         }
       ]
     },
-    {
-      name: "Web Platforms",
-      description: "Full stack client-server, control panels etc",
-      images: [
-        { 
-          url: require("../assets/images/soon.jpg"),
-          description: "Hotel Management",
-         
-        },
-        { 
-          url: require("../assets/images/soon.jpg"),
-          description: "Movie SelfHosting",
-         
-        }
-      ]
-    },
+ 
     {
       name: "Software Apps",
       description: "Projects created mainly in C# or Java.",
       images: [
         { 
           url: require("../assets/images/soon.jpg"),
-          description: "Casino and Betting Platform",
+          description: " soon ",
         
         },
         { 
           url: require("../assets/images/soon.jpg"),
-          description: "Banking and ATM Platform",
+          description: " soon ",
         
         }
       ]
@@ -55,33 +56,35 @@ const projectData = {
       name: "Gaming Apps",
       description: "Projects related to gaming industry.",
       images: [
+
         { 
-          url: require("../assets/images/valve.jpg"),
-          description: "Creating Tools and Gameplay for CStrike ( Pawn , Typeless C , MySQL )",
-          codeLink: "https://github.com/danielvoicu136/cstrike_plugins_pack",
-        },
-        { 
-          url: require("../assets/images/souls.jpg"),
-          description: "Animated Cooperative Team Revive for CStrike ( Pawn , Typeless C )",
-          codeLink: "https://github.com/danielvoicu136/cstrike_plugins_pack/tree/main/cstrike_gameplay_revive_soul",
+          url: require("../assets/images/replace.jpg"),
+          description: "Advanced Bot Controller : Replace bots for CStrike with map spawn fixes, objective transfer etc. ( Pawn, Typeless C )",
+          codeLink: "https://github.com/danielvoicu136/yapb_bot_controller",
         },
    
         { 
-          url: require("../assets/images/replace.jpg"),
-          description: "Advanced Bot Replacer for CStrike with AFK detection, map spawn fixes, objective transfer, etc. ( Pawn , Typeless C )",
-          codeLink: "https://github.com/danielvoicu136/yapb_bot_controller",
+          url: require("../assets/images/souls.jpg"),
+          description: "Animated Souls : Cooperative Team Revive for CStrike, Adding Conquest Mode and Comeback Situations ( Pawn, Typeless C )",
+          codeLink: "https://github.com/danielvoicu136/cstrike_plugins_pack/tree/main/cstrike_gameplay_revive_soul",
         },
 
         { 
           url: require("../assets/images/items.jpg"),
-          description: "Inventory RPG for CStrike with Easy Configuration, Dynamic Slots, Powers etc. ( Pawn , Typeless C )",
+          description: "Inventory RPG : Buy items for CStrike with Easy Configuration, Dynamic Slots, Powers etc. ( Pawn, Typeless C )",
           codeLink: "https://github.com/danielvoicu136/cstrike_plugins_pack/tree/main/cstrike_rpg_items",
         },
 
         { 
           url: require("../assets/images/heroes.jpg"),
-          description: "Valorant style gameplay for CStrike with Heroes, XP, Levels, Items, Skills, Ultimates etc ( Pawn , Typeless C , MySQL )",
+          description: "Super Heroes : Valorant style gameplay for CStrike with Heroes, XP, Levels, Items, Skills, Ultimates etc ( Pawn, Typeless C, MySQL )",
           codeLink: "https://github.com/danielvoicu136/gameplay_cstrike_war3re",
+        },
+
+        { 
+          url: require("../assets/images/valve.jpg"),
+          description: "Creating Advanced Utility Tools and Custom Gameplay Features for CStrike ( Pawn, Typeless C, MySQL )",
+          codeLink: "https://github.com/danielvoicu136/cstrike_plugins_pack",
         },
      
       ]

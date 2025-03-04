@@ -17,8 +17,8 @@ const toolsData = [
       "tools": [
         { "name": "Node.js", "icon": "fa-brands fa-node-js", "color": "#34a853" },
         { "name": "Next.js", "icon": "fa-brands fa-react", "color": "#ea4335" },
-        { "name": "Java, Maven, Spring Boot", "icon": "fa-brands fa-java", "color": "#4285f4" },
-        { "name": "Databases SQL NoSQL", "icon": "fa-solid fa-database", "color": "#fbbc05" }
+        { "name": "Java and Maven", "icon": "fa-brands fa-java", "color": "#4285f4" },
+        { "name": "SQL and NoSQL", "icon": "fa-solid fa-database", "color": "#fbbc05" }
       ]   
     },
     {
@@ -26,7 +26,7 @@ const toolsData = [
       "tools": [
         { "name": "Unit and Mock", "icon": "fa-solid fa-bug", "color": "#673ab7" },
         { "name": "Postman", "icon": "fa-solid fa-envelope", "color": "#ea4335" },
-        { "name": "Selenium WebDriver", "icon": "fa-regular fa-window-restore", "color": "#34a853" }
+        { "name": "Selenium", "icon": "fa-regular fa-window-restore", "color": "#34a853" }
       ]
     },
     {

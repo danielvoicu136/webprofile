@@ -10,10 +10,10 @@ const resumeData = {
   tools: ["React", "Java", "C#"],
   experiences: [
     {
-      yearRange: "2023 - 2025",
+      yearRange: "2024 - 2025",
       company: "ZUMMIT",
       position: "Full Stack Developer",
-      duration: "2 years | WEB - ECOMMERCE PLATFORMS",
+      duration: "1 year | WEB - ECOMMERCE PLATFORMS",
       responsibilities: [
         "Develop web components for web platforms and websites.",
         "Implement new features to improve user interaction and platform responsiveness.",
